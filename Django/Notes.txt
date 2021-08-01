@@ -1,0 +1,29 @@
+initial commands
+cd C:\Django\ATOM\Django
+conda create --name MyDjangoEnv django=1.11
+conda activate MyDjangoEnv
+conda install django=1.11
+
+cd C:\Django\ATOM\Django\first_project
+conda activate MyDjangoEnv
+django-admin startproject first_project
+python manage.py runserver
+python manage.py startapp first_app
+
+
+DATABASE CREATION 
+python manage.py migrate
+python manage.py makemigrations first_app
+python manage.py shell
+
+from first_app.models import Topic
+print(Topic.objects.all())
+t= Topic(top_name="Social Network")
+t.save()
+
+
+python manage.py createsuperuser
+
+pip install bcrypt
+pip install django[argon2]
+pip install pillow --global-option="build_ext" --global-option="--disable-jpeg"
