@@ -1,0 +1,3 @@
+cd C:\Django\ATOM\React\Project1
+npx create-react-app my-first-app
+npm start
