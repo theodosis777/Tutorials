@@ -2,3 +2,6 @@ cd C:\Django\ATOM\React\Project1
 npx create-react-app my-first-app
 npm start
 npm install
+
+https://www.youtube.com/watch?v=Dorf8i6lCuk
+1:28
