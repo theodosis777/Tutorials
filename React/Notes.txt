@@ -6,6 +6,10 @@ npm install
 **for routing
 npm install react-router-dom
 
+*****FOR API
+npm install axios
+
+
 https://www.youtube.com/watch?v=Dorf8i6lCuk
 1:45
 
