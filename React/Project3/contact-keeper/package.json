@@ -4,7 +4,8 @@
   "description": "Contact Manager App",
   "main": "server.js",
   "scripts": {
-    "start": "node server" 
+    "start": "node server.js", 
+    "server":"nodemon server.js"
   },
   "keywords": [],
   "author": "",
