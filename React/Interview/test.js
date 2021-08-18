@@ -16,5 +16,5 @@ const fizzbuzz = (num) => {
   }
 };
 
-fizzbuzz(-20);
+fizzbuzz(20);
 fizzbuzz('basdad');
