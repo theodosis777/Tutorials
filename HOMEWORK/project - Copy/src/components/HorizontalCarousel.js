@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
 import Card from './Card.js';
-
+///test
 class HorizontalCarousel extends Component {
   constructor(props) {
     super(props);

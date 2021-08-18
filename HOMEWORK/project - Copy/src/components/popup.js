@@ -4,7 +4,7 @@ import HorizontalCarousel from './HorizontalCarousel.js';
 function Popup() {
   return (
     <div style={styles.main}>
-      <h1>Chrome Ext - Popup</h1>
+      <h1>Pictures Popup</h1>
       <HorizontalCarousel />
     </div>
   );
@@ -12,8 +12,8 @@ function Popup() {
 
 const styles = {
   main: {
-    width: '300px',
-    height: '600px',
+    width: '600px',
+    height: '900px',
   },
 };
 
