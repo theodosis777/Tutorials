@@ -1,12 +1,18 @@
-import React from 'react';
-import HorizontalCarousel from './HorizontalCarousel.js';
+import React, { Fragment } from 'react';
+import PicsList from './picsList';
 
 function Popup() {
+  function sayHello() {
+    location.href = 'https://frontend-interview-material.vercel.app/';
+    alert('HELLO');
+  }
   return (
-    <div style={styles.main}>
-      <h1>Pictures Popup</h1>
-      <HorizontalCarousel />
-    </div>
+    <Fragment>
+      <div className='App'>
+        <button onClick={sayHello}>HOME</button>
+      </div>
+      <PicsList />
+    </Fragment>
   );
 }
 
