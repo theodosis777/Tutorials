@@ -17,3 +17,8 @@ https://www.youtube.com/watch?v=ABQLwlE8MUA
 
 MONGO DB
 mongodb+srv://User:<password>@contactkeepr.mi7ry.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+WEB FRAMEWORK
+npm i express bcryptjs jsonwebtoken config express-validator mongoose
+
+npm i -D nodemon concurrently
