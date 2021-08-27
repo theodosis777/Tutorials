@@ -1,6 +1,13 @@
 const express = require('express');
+const connectDb = require('./config/db');
 
 const app = express();
+
+///Connect databasec
+connectDb();
+
+//Init DevMiddlewareError
+app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.send('HELLO WORLD'));
 // Define Routes
