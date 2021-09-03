@@ -26,18 +26,17 @@ const AuthState = (props) => {
   const [state, dispatch] = useReducer(AuthReducer, initialState);
 
   ///LOAD USER
-  const loadUser = () => async () => {
-    if (localStorage.token) {
-      setAuthToken(localStorage.token);
-    }
+  const loadUser = async () => {
+    setAuthToken(localStorage.token);
 
     try {
       const res = await axios.get('/api/auth');
+
       dispatch({
         type: USER_LOADED,
         payload: res.data,
       });
-    } catch (error) {
+    } catch (err) {
       dispatch({ type: AUTH_ERROR });
     }
   };
@@ -88,7 +87,7 @@ const AuthState = (props) => {
     }
   };
   ///LOGOUT
-  const logout = () => console.log('logoutuser');
+  const logout = () => dispatch({ type: LOGOUT });
   ///CLEAR ERRORS
   const clearErrors = () =>
     dispatch({
