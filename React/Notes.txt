@@ -22,3 +22,16 @@ WEB FRAMEWORK
 npm i express bcryptjs jsonwebtoken config express-validator mongoose
 
 npm i -D nodemon concurrently
+
+
+HEROKU
+heroku login
+heroku create
+git init
+git add .
+git commit -m 'prepare'
+git push heroku master
+heroku git:remote -a shrouded-meadow-76275
+heroku open
+
+https://shrouded-meadow-76275.herokuapp.com/login
