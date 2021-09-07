@@ -1,17 +1,12 @@
-const filterlist = (arr) => {
-  return arr.filter((item) => item % 2 === 0);
+var twoSum = function (nums, target) {
+  // Create a new map
+  let map = new Map();
+
+  // Loop over the nums array
+  for (let i = 0; i < nums.length; i++) {
+    let remainder = target - nums[i];
+    if (map.has(remainder)) return [map.get(remainder), i];
+    map.set(nums[i], i);
+  }
 };
-
-let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-console.log(filterlist(list));
-
-const numbers = [65, 44, 12, 4];
-const newArr = numbers.map((numbers) => numbers * 10);
-console.log(newArr);
-
-console.log(
-  numbers.forEach((numbers) => {
-    numbers * 10;
-  })
-);
+console.log(twoSum([3, 2, 4], 6));

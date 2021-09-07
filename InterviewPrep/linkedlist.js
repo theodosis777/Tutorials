@@ -14,19 +14,19 @@ const hasCycle = (head) => {
 };
 
 const list = {
-    head: {
-        value: 6
+  head: {
+    value: 6,
+    next: {
+      value: 10,
+      next: {
+        value: 12,
         next: {
-            value: 10                                             
-            next: {
-                value: 12
-                next: {
-                    value: 3
-                    next: null	
-                    }
-                }
-            }
-        }
-    }
+          value: 3,
+          next: null,
+        },
+      },
+    },
+  },
 };
+
 console.log(hasCycle(list.head));
